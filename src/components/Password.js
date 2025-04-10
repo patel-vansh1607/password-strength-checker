@@ -6,9 +6,14 @@ const PasswordChecker = () => {
     const [message, setMessage] = useState("");
     const [progress, setProgress] = useState("");
 
-    
+
     const [hidePassword, setHidePassword] = useState(true);
 
+    const getActiveColor = (type) => {
+        if (type === "Strong") return "#3FBB60"
+        if (type === "Medium") return "#FE804D"
+        return "#FF0054"
+    }
 
 
 
