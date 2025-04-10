@@ -77,7 +77,7 @@ const PasswordChecker = () => {
                              <div
                                 className="progress"
                                 style={{
-                                    width: process,
+                                    width: progress,
                                     backgroundColor: getActiveColor(message),
                                 }}
                                 ></div>
