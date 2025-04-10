@@ -18,6 +18,13 @@ const PasswordChecker = () => {
             hasDigit: false,
             hasSpecialChar: false
         }
+        strengthChecks.length = passswordValue.length >=8 ? true : false;
+        strengthChecks.hasUpperCase = /[A-Z]/.test(passswordValue);
+        strengthChecks.hasLowerCase = /[a-z]/.test(passswordValue);
+        strengthChecks.hasDigit = /[0-9]+/.test(passswordValue);
+        strengthChecks.hasSpecialChar = /[^A-Za-z0-9]+/.test(passswordValue);
+
+        let ver
     }
 
     const getActiveColor = (type) => {
