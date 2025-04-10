@@ -31,6 +31,10 @@ const PasswordChecker = () => {
         ? "Medium"
         : "Weak";
 
+
+        setPassword(passswordValue)
+        setProgress(`${(verifiedList.length / 5) * 100}%`)
+        setMessage(strength)
     }
 
     const getActiveColor = (type) => {
