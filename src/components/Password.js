@@ -9,6 +9,17 @@ const PasswordChecker = () => {
 
     const [hidePassword, setHidePassword] = useState(true);
 
+
+    const handlePassword = (passswordValue) => {
+        const strengthChecks = {
+            length:0,
+            hasUpperCase: false,
+            hasLowerCase: false,
+            hasDigit: false,
+            hasSpecialChar: false
+        }
+    }
+
     const getActiveColor = (type) => {
         if (type === "Strong") return "#3FBB60"
         if (type === "Medium") return "#FE804D"
@@ -28,7 +39,7 @@ const PasswordChecker = () => {
                 <div className="card-body">
                     <div className="input-container">
                         <div className="input-box">
-                            <input value={password} onChange={({ target }) => {}} type={hidePassword ? "password" : "text"} className="input" placeholder="Enter Password" />
+                            <input value={password} onChange={({ target }) => {handlePassword(target.value);}} type={hidePassword ? "password" : "text"} className="input" placeholder="Enter Password" />
                             <a
                             href="#"
                             className="toggle-btn"
