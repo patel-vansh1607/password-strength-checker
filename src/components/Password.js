@@ -13,7 +13,7 @@ const PasswordChecker = () => {
                 <div className="card-body">
                     <div className="input-container">
                         <div className="input-box">
-                            <input value={password} onChange={({ target }) => {}} type={hidePassword ? "password" : "text"}  ></input>
+                            <input value={password} onChange={({ target }) => {}} type={hidePassword ? "password" : "text"} className="input" placeholder="Enter Password" ></input>
                         </div>
                     </div>
                 </div>
