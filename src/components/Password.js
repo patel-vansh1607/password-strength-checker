@@ -13,8 +13,7 @@ const PasswordChecker = () => {
         if (type === "Strong") return "#3FBB60"
         if (type === "Medium") return "#FE804D"
         return "#FF0054"
-    }
-
+    };
 
 
 
@@ -56,6 +55,12 @@ const PasswordChecker = () => {
                                 ></div>
                         </div>
                     </div>
+
+                    {password.length !== 0 ? (
+                        <p className="message" style={{ color :getActiveColor(message)}}>
+                            Your password is {message}
+                        </p>
+                        ) : null }
                 </div>
             </div>
         </div>
