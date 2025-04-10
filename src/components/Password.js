@@ -24,7 +24,9 @@ const PasswordChecker = () => {
         strengthChecks.hasDigit = /[0-9]+/.test(passswordValue);
         strengthChecks.hasSpecialChar = /[^A-Za-z0-9]+/.test(passswordValue);
 
-        let ver
+        let verifiedList = Object.values(strengthChecks).filter((value) => value)
+
+        
     }
 
     const getActiveColor = (type) => {
