@@ -2,6 +2,17 @@ import "../styles/Password.css"
 import React, { useState } from "react";
 
 const PasswordChecker = () => {
+    const [password, setPassword] = useState("");
+    const [message, setMessage] = useState("");
+    const [progress, setProgress] = useState("");
+
+    
+    const [hidePassword, setHidePassword] = useState(true);
+
+
+
+
+
     return(
         <div className="container">
             <div className="card">
@@ -45,3 +56,5 @@ const PasswordChecker = () => {
         </div>
     )
 }
+
+export default PasswordChecker
