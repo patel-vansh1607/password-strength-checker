@@ -1,7 +1,7 @@
 [![Project Banner](./src//images/readme-project-banner-01.png)](https://emoji-search-filter-omega.vercel.app/)
 ---
 # 🚀 **Password Strength Checker**  
-> _A website where user can search an emoji and upon search a display of the emoji is shown where they can copy it and use it in chats or anywhere else_
+> _A website where user can search enter their password and the validation system will tell if it is strong or not_
 ---
 
 ## 🔥 **Features**
